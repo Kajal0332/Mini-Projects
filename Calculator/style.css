@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    /* line-height: 1.5; */
+    /* margin: 50px; */
+    width: 100%;
+    display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: 100vh; 
+}
+
+.container{
+    background-color: #ddcccc;
+        width: 35%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgb(249,249,249);
+        background: radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(50,175,112,1) 100%);
+        -webkit-box-shadow: 10px 14px 15px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 14px 15px -4px rgba(0,0,0,0.75);
+        box-shadow: 10px 14px 15px -4px rgba(0,0,0,0.75);}
+    
+    h1{
+        font-size: 2.5rem;
+        margin: 10px;
+        text-align: center;
+    }
+    input{
+        font-size: 25px;
+        border-radius: 10px;
+        border: none;
+        margin: 10px;
+        /* text-align: center; */
+    }
+    .row{
+        display: flex;
+        /* margin: 10px; */
+        justify-content: center;
+    }
+    .row button{
+        margin: 10px;
+        padding:20px ;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    #clear{
+        background-color: rgb(224, 138, 138);
+    }
+
+    @media (max-width: 575.98px) {
+        /* Styles for extra small devices */
+        body{
+            background-color: #f5f5f5;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #333;
+            /* line-height: 1.5; */
+            /* margin: 50px; */
+        }
+        .container{
+            background-color: #ddcccc;
+            width: 50%;
+            text-align: center;
+
+        }
+        h1{
+            font-size: 2rem;
+        }
+        .row button{
+            margin: 5px;
+            padding: 10px;
+        }
+        input{
+            font-size: 13px;
+            padding: 10px 5px;
+        }
+    }
+    
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        /* Styles for small devices */
+        body{
+            background-color: #f5f5f5;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #333;
+            /* line-height: 1.5; */
+            /* margin: 50px; */
+        }
+        .container{
+            background-color: #ddcccc;
+            width: 40%;
+            text-align: center;
+            
+        }
+        h1{
+            font-size: 2rem;
+        }
+        .row button{
+            margin: 5px;
+            padding: 10px;
+        }
+        input{
+            font-size: 13px;
+            padding: 10px 5px;
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        /* Styles for medium devices */
+        body{
+            background-color: #f5f5f5;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #333;
+            /* line-height: 1.5; */
+            /* margin: 50px; */
+        }
+        .container{
+            background-color: #ddcccc;
+            width: 30%;
+            text-align: center;
+            
+        }
+        h1{
+            font-size: 2rem;
+        }
+        .row button{
+            margin: 5px;
+            padding: 10px;
+        }
+        input{
+            font-size: 13px;
+            padding: 10px 5px;
+        }
+        
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        /* Styles for large devices */
+        body{
+            background-color: #f5f5f5;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #333;
+            /* line-height: 1.5; */
+            /* margin: 50px; */
+        }
+        .container{
+            background-color: #ddcccc;
+            width: 22%;
+            text-align: center;
+            
+        }
+        h1{
+            font-size: 2rem;
+        }
+        .row button{
+            margin: 5px;
+            padding: 10px;
+        }
+        input{
+            font-size: 13px;
+            padding: 10px 5px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        /* Styles for extra large devices */
+        body{
+            background-color: #f5f5f5;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #333;
+            /* line-height: 1.5; */
+            /* margin: 50px; */
+        }
+        .container{
+            background-color: #ddcccc;
+            width: 20%;
+            text-align: center;
+            
+        }
+        h1{
+            font-size: 2rem;
+        }
+        .row button{
+            margin: 5px;
+            padding: 10px;
+        }
+        input{
+            font-size: 13px;
+            padding: 10px 5px;
+        }
+    }
+    
+    @media (min-width: 1400px) {
+        /* Styles for extra extra large devices */
+        body{
+            background-color: #f5f5f5;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #333;
+            /* line-height: 1.5; */
+            /* margin: 50px; */
+        }   
+        .container{
+                background-color: #ddcccc;
+                width: 15%;
+                text-align: center;
+                
+            }
+            h1{
+                font-size: 2rem;
+            }
+            .row button{
+                margin: 5px;
+                padding: 10px;
+            }
+            input{
+                font-size: 13px;
+                padding: 10px 5px;
+            }    
+      }
+      
+    /* @media only screen and (min-width:600px){
+        body{
+            background-color: #f5f5f5;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+            margin: 50px;
+        }
+        .container{
+            background-color: #ddcccc;
+            width: 40%;
+            text-align: center;
+
+        }
+        h1{
+            font-size: 2rem;
+        }
+        .row button{
+            margin: 5px;
+            padding: 10px;
+        }
+        input{
+            font-size: 13px;
+        }
+    } */
