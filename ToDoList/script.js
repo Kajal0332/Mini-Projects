@@ -13,7 +13,7 @@ $(document).ready(function () {
           '<i class="fa-solid fa-trash"></i>' +'<i class="fa-solid fa-check"></i>',
         "</li>"
       );
-        $(this).val("");
+        $("#input").val("");
         $("ul").on("click", ".fa-trash", function () {
           $(this).parent("li").hide();
         });
