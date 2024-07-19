@@ -111,6 +111,10 @@ ul li i{
     background-color: rgb(31, 30, 30);
     border-radius: 50%;
 }
+ul .checked{
+    text-decoration: line-through;
+    background: rgb(101, 104, 101);
+}
 
 
         
