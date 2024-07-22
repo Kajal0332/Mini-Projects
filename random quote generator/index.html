@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        background-image: url(img/road-1072823_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        /* border: 2px solid black; */
+      }
+      .quote-box {
+        background: rgb(34, 193, 195);
+        background: linear-gradient(
+          0deg,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(253, 184, 45, 1) 100%
+        );
+        /* animation border  */
+        --borderWidth: 13px;
+
+        position: relative;
+        border-radius: var(--borderWidth);
+        border-radius: 20px;
+        text-align: center;
+        font-size: 1rem;
+        width: 40%;
+        height: 40%;
+        /* for box-shadow  */
+        -webkit-box-shadow: 10px 14px 8px 1px rgba(0, 0, 0, 0.59);
+        -moz-box-shadow: 10px 14px 8px 1px rgba(0, 0, 0, 0.59);
+        box-shadow: 10px 14px 8px 1px rgba(0, 0, 0, 0.59);
+        padding: 30px;
+      }
+      .quote-box:after {
+        content: "";
+        position: absolute;
+        top: calc(-1 * var(--borderWidth));
+        left: calc(-1 * var(--borderWidth));
+        height: calc(100% + var(--borderWidth) * 2);
+        width: calc(100% + var(--borderWidth) * 2);
+        background: linear-gradient(
+          60deg,
+          #f79533,
+          #f37055,
+          #ef4e7b,
+          #a166ab,
+          #5073b8,
+          #1098ad,
+          #07b39b,
+          #6fba82
+        );
+        border-radius: calc(2 * var(--borderWidth));
+        z-index: -1;
+        animation: animatedgradient 3s ease alternate infinite;
+        background-size: 300% 300%;
+      }
+
+      @keyframes animatedgradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .quotes {
+        display: flex;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        color: white;
+        /* width: 100%; */
+        /* padding: 50px 0; */
+      }
+      .btn {
+        text-align: center;
+      }
+
+      button {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="quote-box">
+        <div class="quotes">
+          <h1 id="quote">Quote</h1>
+        </div>
+        <p id="author">Mr. S</p>
+      </div>
+    </div>
+    <div class="btn">
+      <button id="new-quote" onclick="newQuote()">New Quote</button>
+    </div>
+    <script>
+      function newQuote() {
+        let quotes = {
+          "	William Shakespeare":
+            "A rose by any other name would smell as sweet.",
+          "   John Kennedy":
+            "Ask not what your country can do for you; ask what you can do for your country.",
+          "   Woody Allen": "Eighty percent of success is showing up.",
+        };
+
+        let authors = Object.keys(quotes);
+        let author = authors[Math.floor(Math.random() * authors.length)];
+
+        let quote = quotes[author];
+        document.getElementById("quote").innerHTML = quote;
+        document.getElementById("author").innerHTML = author;
+      }
+    </script>
+  </body>
+</html>
